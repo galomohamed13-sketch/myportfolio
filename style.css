@@ -1,0 +1,109 @@
+:root {
+    --primary: #003366;
+    --accent: #00a8e8;
+    --bg: #f4f7f6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: var(--primary);
+    color: white;
+    padding: 30px 20px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+}
+
+.menu a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+.menu a:hover,
+.menu a.active {
+    background: rgba(255,255,255,0.2);
+    border-left: 4px solid var(--accent);
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+.section {
+    display: none;
+}
+
+h1 {
+    color: var(--primary);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 10px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.skill {
+    background: #eaeaea;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.tag {
+    background: var(--primary);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.gallery img {
+    width: 150px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.contact p {
+    font-size: 16px;
+}
